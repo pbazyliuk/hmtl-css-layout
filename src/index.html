@@ -15,20 +15,20 @@
     <header class="header">
         <div class="container">
             <div class="logo-wrapper">
-                <img class="logo-img" src="img/logo.png" alt="logo">
+                <a href="index.html"><img class="logo-img" src="img/logo.png" alt="logo"></a>
             </div> <!--end logo-wrapper-->
 
             <nav>
                 <ul class="main-nav">
-                    <li><a href="/about-us.html" alt="about-us page">About Us</a></li>
-                    <li><a href="/our-focus.html" alt="our-focus page">Our Focus</a></a></li>
-                    <li><a href="/portfolio.html" alt="portfolio page">Portfolio</a></li>
-                    <li><a href="/our-team.html" alt="our-team page">Our Team</a></li>
-                    <li><a href="/work-steps.html" alt="work-steps page">Work Steps</a></li>
-                    <li><a href="/pricing.html" alt="pricing page">Pricing</a></li>
-                    <li><a href="/testimonials.html" alt="testimonials page">Testimonials</a></li>
-                    <li><a href="/blog.html" alt="blog page">Blog</a></li>
-                    <li><a href="/contact.html" alt="contact page">Contact</a></li>
+                    <li><a href="#S1-About" alt="about-us page">About Us</a></li>
+                    <li><a href="#S2-Our-Focus" alt="our-focus page">Our Focus</a></a></li>
+                    <li><a href="#S3-Portfolio" alt="portfolio page">Portfolio</a></li>
+                    <li><a href="#S4-Our-Team" alt="our-team page">Our Team</a></li>
+                    <li><a href="#S5-Work-Steps" alt="work-steps page">Work Steps</a></li>
+                    <li><a href="#S6-Pricing" alt="pricing page">Pricing</a></li>
+                    <li><a href="#S7-Testimonials" alt="testimonials page">Testimonials</a></li>
+                    <li><a href="#S8-Blog" alt="blog page">Blog</a></li>
+                    <li><a href="#S9-Contact" alt="contact page">Contact</a></li>
                 </ul>
             </nav>  <!--end nav-->
         </div>  <!--end container-->
@@ -62,10 +62,10 @@
             </div>  <!--end container-->
         </section>   <!--end wellcome-->
 
-        <section class="about-us">
+        <section class="about-us" id="S1-About">
             <div class="container">
                <div class="about-us-img-wrapper">
-                   <img class="about-us-img" src="http://via.placeholder.com/535x680" alt="about-us-img">
+                   <img class="about-us-img" src="img/about-us.jpg" alt="about-us-img">
                </div>
                <div class="about-us-info">
                    <div class="about-us-info-img-wrapper">
@@ -93,7 +93,7 @@
             </div>  <!--end container-->
         </section>   <!--end about-us-->
 
-        <section class="our-focus">
+        <section class="our-focus" id="S2-Our-Focus">
             <div class="container">
 
                 <div class="our-focus-info">
@@ -167,17 +167,21 @@
 
         <section class="video-content">
             <div class="container">
-
-                    <video class="video-wrapper"  width="640" height="360" controls src="video/A Year on Planet Earth (4 Seasons).mp4">
+                <video class="video-wrapper" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+                <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+                </video>
+                <!--<video class="video-wrapper"  width="640" height="360" controls src="video/A Year on Planet Earth (4 Seasons).mp4">
                     <source src="video/A Year on Planet Earth (4 Seasons).mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video>-->
                 <div class="video-content-info">
                     <h3 class="video-content-info-header">
                         Explore Our Awesomeness
                     </h3>
                     <div class="btn-video-play-img-wrapper">
-                        <img src="img/video.png" class="btn-video-play-img" alt="">
+                        <button class="btn-video-play-img"></button>
                     </div>
                     <div class="video-content-info-text">
                         Click to play the video
@@ -188,7 +192,7 @@
             </div>  <!--end container-->
         </section>  <!--end video-content-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="S3-Portfolio">
             <div class="container">
                 
                  <div class="portfolio-info">
@@ -251,7 +255,7 @@
         </section>  <!--end portfolio-->
 
 
-         <section class="our-team">
+         <section class="our-team" id="S4-Our-Team">
 
             <div class="container">
                 <div class="our-team-info">
@@ -271,7 +275,7 @@
 
                 <div class="our-team-employee">
                     <div class="our-team-employee-img-wrapper">
-                        <img src="http://via.placeholder.com/252x260" alt="">
+                        <img src="img/wight-b.jpg" alt="">
                     </div>
                     <h4 class="our-team-employee-name">
                         Michael Schmitt
@@ -283,7 +287,7 @@
 
                 <div class="our-team-employee">
                     <div class="our-team-employee-img-wrapper">
-                        <img src="http://via.placeholder.com/252x260" alt="">
+                        <img src="img/wight2-b.jpg" alt="">
                     </div>
                     <h4 class="our-team-employee-name">
                         David Kramer
@@ -295,7 +299,7 @@
 
                 <div class="our-team-employee">
                     <div class="our-team-employee-img-wrapper">
-                        <img src="http://via.placeholder.com/252x260" alt="">
+                        <img src="img/wight1-b.jpg" alt="">
                     </div>
                     <h4 class="our-team-employee-name">
                         Anna Schroder
@@ -307,7 +311,7 @@
 
                 <div class="our-team-employee">
                     <div class="our-team-employee-img-wrapper">
-                        <img src="http://via.placeholder.com/252x260" alt="">
+                        <img src="img/wight3-b.jpg" alt="">
                     </div>
                     <h4 class="our-team-employee-name">
                         Jason Teichmann
@@ -335,31 +339,39 @@
 
                     <div class="our-team-employee-description-social-networks">
                         <div class="our-team-employee-description-fb-wrapper">
-                            <img class="our-team-employee-description-img-fb" src="img/f.png" alt="facebook logo">
-                            <span class="our-team-employee-description-fb-text">
-                                Facebook
-                            </span>
+                            <a href="http://www.facebook.com" class="our-team-employee-description-img-link">
+                                <img class="our-team-employee-description-img-fb" src="img/f.png" alt="facebook logo">
+                                <span class="our-team-employee-description-fb-text">
+                                    Facebook
+                                </span>
+                            </a>
                         </div>
 
                         <div class="our-team-employee-description-tw-wrapper">
-                            <img class="our-team-employee-description-img-tw" src="img/t.png" alt="facebook logo">
-                            <span class="our-team-employee-description-tw-text">
-                                Twitter
-                            </span>
+                            <a href="http://www.twitter.com" class="our-team-employee-description-img-link">
+                                <img class="our-team-employee-description-img-tw" src="img/t.png" alt="facebook logo">
+                                <span class="our-team-employee-description-tw-text">
+                                    Twitter
+                                </span>
+                            </a>
                         </div>
 
                         <div class="our-team-employee-description-ld-wrapper">
-                            <img class="our-team-employee-description-img-ld" src="img/L.png" alt="facebook logo">
-                            <span class="our-team-employee-description-ld-text">
-                                Linkedin
-                            </span>
+                            <a href="http://www.linkedin.com" class="our-team-employee-description-img-link">
+                                <img class="our-team-employee-description-img-ld" src="img/L.png" alt="facebook logo">
+                                <span class="our-team-employee-description-ld-text">
+                                    Linkedin
+                                </span>
+                            </a>
                         </div>
 
                         <div class="our-team-employee-description-ins-wrapper">
-                            <img class="our-team-employee-description-img-ins" src="img/i.png" alt="facebook logo">
-                            <span class="our-team-employee-description-ins-text">
-                                Instagram
-                            </span>
+                            <a href="http://www.instagram.com" class="our-team-employee-description-img-link">
+                                <img class="our-team-employee-description-img-ins" src="img/i.png" alt="facebook logo">
+                                <span class="our-team-employee-description-ins-text">
+                                    Instagram
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -434,7 +446,7 @@
             </div>
          </section> <!--end statictics-->
 
-        <section class="work-steps">
+        <section class="work-steps" id="S5-Work-Steps">
 
             <div class="container">
                 <div class="work-steps-info">
@@ -453,23 +465,23 @@
             <div class="container">
                 <div class="work-steps-imgs">
                     <div class="work-steps-img-wrapper">
-                        <img src="http://via.placeholder.com/556x300" alt="">
+                        <img src="img/8_Steps_to_Organize_your_Work_Day.jpg" alt="">
                     </div>
                     <div class="work-steps-img-wrapper">
-                        <img src="http://via.placeholder.com/556x300" alt="">
+                        <img src="img/8_Steps_to_Organize_your_Work_Day.jpg" alt="">
                     </div>
                     <div class="work-steps-img-wrapper">
-                        <img src="http://via.placeholder.com/556x300" alt="">
+                        <img src="img/8_Steps_to_Organize_your_Work_Day.jpg"alt="">
                     </div>
                     <div class="work-steps-img-wrapper">
-                        <img src="http://via.placeholder.com/556x300" alt="">
+                        <img src="img/8_Steps_to_Organize_your_Work_Day.jpg" alt="">
                     </div>
                 </div>
             </div>  <!--end container-->
 
 
             <div class="container">
-                <div class="work-steps-plan">
+                <div class="work-steps-plan clearfix">
                     <div class="work-steps-plan-project-under">
                         <div class="work-steps-plan-project-under-img-wrapper">
                             <img src="img/line1.png" alt="">
@@ -533,7 +545,7 @@
             </div>  <!--end container-->
         </section>  <!--end work steps-->
 
-        <section class="pricing-table">
+        <section class="pricing-table" id="S6-Pricing">
             <div class="container">
                 <div class="pricing-table-info">
                     <div class="pricing-table-info-img-wrapper">
@@ -665,7 +677,7 @@
             </div>  <!--end container-->
         </section>  <!--end pricing table-->
 
-        <section class="testimonials">
+        <section class="testimonials" id="S7-Testimonials">
             <div class="container">
                  <div class="testimonials-info">
                     <div class="testimonials-img-wrapper">
@@ -683,7 +695,7 @@
             <div class="container">
                 <div class="testimonials-gallery">
                     <div class="testimonials-gallery-img-wrapper">
-                        <img src="http://via.placeholder.com/364x379" alt="">
+                        <img src="img/testimonials.jpg" alt="">
                     </div>
                     <div class="testimonials-gallery-letter">
                         <div class="testimonials-gallery-letter-img-wrapper">
@@ -826,7 +838,7 @@
         </section>  <!--end select-us-->
 
 
-        <section class="our-blog">
+        <section class="our-blog" id="S8-Blog">
             <div class="container">
                  <div class="our-blog-info">
                     <div class="our-blog-img-wrapper">
@@ -844,7 +856,7 @@
             <div class="container">
                 <div class="our-blog-left-part">
                     <div class="our-blog-left-part-img-wrapper">
-                        <img src="http://via.placeholder.com/555x443" alt="">
+                        <img src="img/Short-Spiky-Hair-Men.jpg" alt="">
                     
                         <div class="our-blog-left-part-text">
                             <span class="our-blog-left-part-text-author">
@@ -855,21 +867,183 @@
                             </span>
                         </div>
                     </div>
-                    <div class="our-blog-left-part-article">
-
+                    <div class="our-blog-left-part-cur-article">
+                        <div class="our-blog-left-part-cur-article-header">
+                            Facebook’s CNN livestream will test its place in the second screen era
+                        </div>
+                        <div class="our-blog-left-part-cur-article-header-text">
+                            Traction seed money infographic accelerator pivot value proposition ownership 
+                            business-to-consumer iteration market analytics paradigm 
+                            <span class="bolded-text">Read Full Article »</span>
+                        </div>
                     </div>
-
                 </div>  
 
                 <div class="our-blog-right-part">
-                    <div class="our-blog-left-part-img-wrapper">
+                    <!--<div class="our-blog-left-part-img-wrapper">
                         <img src="http://via.placeholder.com/555x443" alt="">
+                    </div>-->
+                    <div class="our-blog-right-part-article">
+                         <div class="our-blog-right-part-text">
+                            <span class="our-blog-right-part-text-author">
+                                Damian Schreiber
+                            </span>
+                            <span class="our-blog-right-part-text-date">
+                                December 10, 2015
+                            </span>
+                        </div>
+
+                        <div class="our-blog-right-part-article-header">
+                            Google Street View adds virtual reality support
+                        </div>
+
+                        <div class="our-blog-right-part-article-text">
+                            Traction seed money infographic accelerator pivot value proposition ownership 
+                            business-to-consumer iteration market analytics paradigm 
+                            <span class="bolded-text">Read Full Article »</span>
+                        </div>
+                    </div>
+
+                     <div class="our-blog-right-part-article">
+                         <div class="our-blog-right-part-text">
+                            <span class="our-blog-right-part-text-author">
+                                Damian Schreiber
+                            </span>
+                            <span class="our-blog-right-part-text-date">
+                                December 10, 2015
+                            </span>
+                        </div>
+
+                        <div class="our-blog-right-part-article-header">
+                            Google Street View adds virtual reality support
+                        </div>
+
+                        <div class="our-blog-right-part-article-text">
+                            Traction seed money infographic accelerator pivot value proposition ownership 
+                            business-to-consumer iteration market analytics paradigm 
+                            <span class="bolded-text">Read Full Article »</span>
+                        </div>
+                    </div>
+
+                    <div class="our-blog-right-part-article">
+                         <div class="our-blog-right-part-text">
+                            <span class="our-blog-right-part-text-author">
+                                Damian Schreiber
+                            </span>
+                            <span class="our-blog-right-part-text-date">
+                                December 10, 2015
+                            </span>
+                        </div>
+
+                        <div class="our-blog-right-part-article-header">
+                            Google Street View adds virtual reality support
+                        </div>
+
+                        <div class="our-blog-right-part-article-text">
+                            Traction seed money infographic accelerator pivot value proposition ownership 
+                            business-to-consumer iteration market analytics paradigm 
+                            <span class="bolded-text">Read Full Article »</span>
+                        </div>
                     </div>
                 </div>
             </div>  <!--end container-->
         </section>  <!--end our blog-->
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe-newsletter">
+                    <div class="subscribe-newsletter-header">
+                        Subscribe to Newsletter
+                    </div>
+
+                    <div class="subscribe-newsletter-btn-wrapper">
+                        <input type="text" class="subscribe-newsletter-input"
+                        placeholder="Enter your email">
+                        <button class="subscribe-newsletter-btn-submit" type="submit">Subscribe now</button>
+                        
+                    </div>
+                </div>
+            </div>  <!--end container-->
+        </section>
+
+        <section class="get-in-touch" id="S9-Contact">
+            <div class="container">
+                 <div class="get-in-touch-info">
+                    <div class="get-in-touch-img-wrapper">
+                       <img class="get-in-touch-img" src="img/10.png" alt="first section img">
+                    </div>
+                    <h2 class="get-in-touch-info-header">
+                        Get in Touch.
+                    </h2>
+                    <div class="get-in-touch-info-description">
+                       We understand your requirement and provide quality works.
+                    </div>
+                </div>
+            </div>  <!--end container-->
+
+            <div class="container">
+                <form class="get-in-touch-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Project Budget">
+
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" ></textarea>
+                    <div class="get-in-touch-form-btn-submit-wrapper">
+                        <button class="get-in-touch-form-btn-submit" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>  <!--end container-->
+
+            <div class="container">
+                <footer class="footer">
+                    <div class="footer-info-wrapper">
+                        <div class="footer-info-logo-wrapper">
+                            <img src="img/logo-bg.png" alt="">
+                        </div>
+
+                        
+                            <div class="footer-info-contacts-first-col">
+                                <div class="footer-info-contacts-first-col-header">
+                                    Alexis LLC.
+                                </div>
+
+                                <div class="footer-info-contacts-first-col-text">
+                                    4125 Brighton Circle Road
+                                    Little Falls, MN 56345
+                                </div>
+                            </div>
+
+                            <div class="footer-info-contacts-second-col">
+                                <div class="footer-info-contacts-second-col-header">
+                                    Alexis LLC UK.
+                                </div>
+
+                                <div class="footer-info-contacts-second-col-text">
+                                    81 Golden Knowes Road
+                                    FRESHFIELD &nbsp;L37 6TP
+                                </div>
+                            </div>
+
+                            <div class="footer-info-contacts-third-col">
+                                <div class="footer-info-contacts-third-col-header">
+                                    Follow Us
+                                </div>
+
+                                <div class="footer-info-contacts-third-col-text">
+                                   <img src="img/links3.png" alt="">
+                                   <img src="img/links1.png" alt="">
+                                   <img src="img/links2.png" alt="">
+                                   <img src="img/links4.png" alt="">
+                                </div>
+                            </div>
+                    </div>
+                </footer>
+            </div>
+          </section>
     </main>
 
+    <script src="script.js"></script>
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
         ':35729/livereload.js?snipver=1"></' + 'script>')
