@@ -107,7 +107,6 @@ nav {
 .btn-our-works:hover {
     background-color: #fff;
     color: #f46955;
-    /*border: 1px solid #f46955;*/
     transition: background-color .5s, color .5s;
 }
 
@@ -146,11 +145,6 @@ nav {
     height: 40px;
 }
 
-/*.advantage-fix-price {
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-}*/
-
 .advantage-fix-price-text {
     color: #38c695;
 }
@@ -159,10 +153,6 @@ nav {
     background-image: url('/img/header1.png');
 }
 
-/*.advantage-on-time {
-    margin-left: 12.5%;
-}*/
-
 .advantage-on-time-text {
     color: #936cc7;
 }
@@ -170,10 +160,6 @@ nav {
 .advantage-on-time:before {
     background-image: url('/img/header2.png');
 }
-
-/*.advantage-satisfaction {
-    margin-left: 8.2%;
-}*/
 
 .advantage-satisfaction-text {
     color: #feb960;
@@ -188,6 +174,7 @@ nav {
 
 .about-us > .container {
     align-items: center;
+    justify-content: center;
 }
 
 .about-us-img-wrapper {
@@ -203,8 +190,8 @@ nav {
     height: 550px;
     width: 651px;
     background-color: #fff;
-    position: absolute;
-    right: 105px;
+    margin-left: -65px;
+    position: relative;
     box-shadow: 2px -2px 15px -8px #888;
 }
 
@@ -217,7 +204,6 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#999999', GradientType=1);
     content: "";
     display: block;
-    /*margin-top: 49px;*/
     height: 4px;
     width: 651px;
 }
@@ -259,7 +245,6 @@ nav {
 /*==========Our focus section styles=========*/
 
 .our-focus {
-    /*height: 825px;*/
     background-color: #f7f7f7;
 }
 
@@ -308,7 +293,6 @@ nav {
     width: 202px;
     padding: 0 30px;
     height: 347px;
-    /*margin-right: 30px;*/
     background-color: #fff;
     box-shadow: 0 0 15px -10px #000;
     margin-top: 78px;
@@ -332,10 +316,6 @@ nav {
 .our-focus-app-development {
     border-bottom: 3px solid #feb960;
 }
-
-/*.our-focus-activities div:last-child {
-    margin-right: 0;
-}*/
 
 .our-focus-web-design-img-wrapper,
 .our-focus-app-development-img-wrapper {
@@ -382,8 +362,8 @@ nav {
 
 .video-content {
     background-color: grey;
-    
-   
+    height: 500px;
+   overflow: hidden;
 }
 
 .video-content > .container {
@@ -396,37 +376,25 @@ nav {
     height: 500px;
     margin: 0;
     padding: 0;
+
 }
 
 video { 
-    /*width: 100%;
-    height: auto;*/
-    /*position: absolute;*/
-    /*height: 1000px;*/
     min-width: 100%;
-    /*min-height: 100%;*/
-    
+    position: relative;
     width: auto;
     height: auto;
-    /*top: 75%;
-    left: 75%;*/
-    /*min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    /*z-index: -100;*/
-    /*transform: translateX(-50%) translateY(-50%);*/
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
 
-/**/
-
 .video-content-info {
+    z-index: 1000;
     position: absolute;
     color: white;
     text-align: center;
+    width: 100%;
+    margin-top: calc((500px - 199px)/2);
 }
 
 .video-content-info-header {
@@ -483,7 +451,6 @@ video {
 /*==========Porfolio section styles=========*/
 
 .portfolio {
-    /*height: 1384px;*/
     background-color: #fff;
 }
 
@@ -569,9 +536,7 @@ video {
 
 .portfolio-gallery-project:hover img {
     width: 360px;
-    /*height: 223px;*/
     clip-path: polygon(0% 0%, 0 78%, 100% 78%, 100% 0%);
-    /*transition: clip-path .3s;*/
 }
 
 .portfolio-gallery-project-name {
@@ -903,9 +868,6 @@ video {
 /*==========Work steps styles=========*/
 
 .work-steps {
-    /*height: 1725px;*/
-    /*border: 1px solid transparent;
-    z-index: 1000;;*/
     background-color: #fff;
 }
 
@@ -946,7 +908,6 @@ video {
 .work-steps-imgs {
     margin-top: 127px;
     position: absolute;
-    /*margin-bottom: 150px;*/
 }
 
 .work-steps-img-wrapper {
@@ -1150,7 +1111,6 @@ video {
 /*==========Pricing section styles=========*/
 
 .pricing-table {
-    /*height: 1052px;*/
     background-color: #f7f7f7;
 }
 
@@ -1191,8 +1151,6 @@ video {
 .pricing-table-info-description {
     font-size: 18px;
 }
-
-
 
 .pricing-table-starter,
 .pricing-table-ultimate,
@@ -1318,6 +1276,7 @@ video {
     font-size: 16px;
     margin-top: 38px;
     line-height: 45px;
+    cursor: pointer;
 }
 
 .pricing-table-starter-description-btn:hover {
@@ -1337,6 +1296,7 @@ video {
 .pricing-table-ultimate-description-btn {
     border: 2px solid #fc5f45;
     color: #fc5f45;
+    
 }
 
 .pricing-table-ultimate-description-btn:hover {
@@ -1369,7 +1329,6 @@ video {
 
 .testimonials {
     background-color: #3f4049;
-    /*height: 873px;*/
 }
 
 .testimonials > .container {
@@ -1499,7 +1458,6 @@ video {
 
 .select-us {
     background-color: #fff;
-    /*height: 1052px;*/
 }
 
 .select-us > .container {
@@ -1554,7 +1512,6 @@ video {
     height: 150px;
     margin-top: 78px;
     margin-left: 24px;
-    /*float: left;*/
 }
 
 .select-us-business-header {
@@ -1579,7 +1536,6 @@ video {
     margin-left: 72px;
     height: 150px;
     margin-top: 78px;
-    /*float: left;*/
 }
 
 .select-us-revisions-img-wrapper {
@@ -1609,7 +1565,6 @@ video {
     margin-left: 72px;
     height: 150px;
     margin-top: 78px;
-    /*float: left;*/
 }
 
 .select-us-prefection-img-wrapper {
@@ -1639,7 +1594,6 @@ video {
     margin-left: 23px;
     height: 150px;
     margin-top: 74px;
-    /*float: left;*/
 }
 
 .select-us-experience-header {
@@ -1657,7 +1611,6 @@ video {
     margin-left: 72px;
     height: 150px;
     margin-top: 73px;
-    /*float: left;*/
 }
 
 .select-us-deadline-header {
@@ -1682,7 +1635,6 @@ video {
     margin-left: 65px;
     height: 150px;
     margin-top: 73px;
-    /*float: left;*/
 }
 
 .select-us-award-header {
@@ -1734,6 +1686,7 @@ video {
     font-size: 16px;
     text-align: center;
     line-height: 47px;
+    cursor: pointer;
 }
 
 .journy-btn:hover {
@@ -1749,7 +1702,6 @@ video {
     background-color: #f7f7f7;
     height: 1150px;
 }
-
 
 .our-blog > .container {
     justify-content: center;
@@ -1815,7 +1767,6 @@ video {
 }
 
 .our-blog-left-part-cur-article {
-    /*height: 230px;*/
     background-color: #fff;
     border-bottom: 3px solid #feb960;
     padding-left: 50px;
@@ -1828,15 +1779,12 @@ video {
     line-height: 165%;
     font-weight: 500;
     width: 460px;
-    /*margin-left: 50px;
-    margin-top: 27px;*/
 }
 
 .our-blog-left-part-cur-article-header-text {
     width: 460px;
     font-size: 15px;
     line-height: 180%;
-    /*margin-left: 50px;*/
     margin-top: 20px;
     margin-bottom: 35px;
 }
@@ -1844,7 +1792,6 @@ video {
 .our-blog-right-part {
     margin-top: 77px;
 }
-
 
 .our-blog-right-part-article {
     height: 210px;
@@ -1881,7 +1828,6 @@ video {
     width: 470px;
     font-size: 15px;
     line-height: 180%;
-    /*margin-left: 50px;*/
     margin-top: 15px;
     margin-bottom: 35px;
 }
@@ -1913,7 +1859,6 @@ video {
 }
 
 .subscribe {
-    /*height: 425px;*/
     background-color: #fff;
 }
 
@@ -1928,7 +1873,6 @@ video {
     height: 150px;
     margin-top: 140px;
     margin-bottom: 134px;
-    /*background-color: lightblue;*/
 }
 
 .subscribe-newsletter-header {
@@ -1985,6 +1929,7 @@ input:focus{
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .subscribe-newsletter-btn-submit:hover {
@@ -1995,6 +1940,7 @@ input:focus{
 }
 
 
+/*==========Get In Touch section styles=========*/
 
 .get-in-touch {
     background-color: #ccc;
@@ -2086,13 +2032,11 @@ input:focus{
     border: 0;
     padding: 0;
     width: 100%;
-    /*height: 500px;*/
     resize: none;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5px;
 }
-
 
 .get-in-touch-form textarea::-webkit-input-placeholder {
     text-align: center;
@@ -2112,6 +2056,12 @@ input:focus{
     width: 190px;
     color: #fff;
     background-color: #fc5f45;
+    cursor: pointer;
+}
+
+.get-in-touch-form-btn-submit:hover {
+    color: #fc5f45;
+    background-color: #fff;
 }
 
 
@@ -2143,7 +2093,6 @@ input:focus{
 
 .footer-info-wrapper {
     width: 1020px;
-    /*background-color: lightcoral;*/
     height: 100px;
     display: flex;
     height: 140px;
@@ -2158,12 +2107,6 @@ input:focus{
     align-items: center;
     width: 176px;
 }
-
-/*.footer-info-contacts-wrapper {
-    background-color: lightgreen;
-    display: flex;
-    flex-direction: row;
-}*/
 
 .footer-info-contacts-first-col,
 .footer-info-contacts-second-col,
