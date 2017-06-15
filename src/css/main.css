@@ -207,6 +207,8 @@ nav {
     display: block;
     height: 4px;
     width: 651px;
+    /*position: relative;*/
+    /*bottom: 0;*/
 }
 
 .about-us-info-img-wrapper {
@@ -221,7 +223,8 @@ nav {
 }
 
 .about-us-info-article {
-    padding: 7.2% 12.6% 16.5%;
+    padding: 7.2% 12.6% 0;
+    height: calc(100% - 9%);
 }
 
 .about-us-info-article-header {
@@ -374,7 +377,7 @@ nav {
 
 .video-content {
     /*background-color: grey;*/
-    /*height: 500px;*/
+    height: 500px;
     overflow: hidden;
 }
 
@@ -505,13 +508,13 @@ video {
     font-size: 18px;
 }
 
-/*.portfolio-gallery-projects {
+.portfolio-gallery-projects {
     display: flex;
     justify-content: spa;
     width: 100%;
     flex-flow: row wrap;
     margin-top: 56px;
-}*/
+}
 
 .portfolio-gallery-project {
     margin-top: 23px;
@@ -532,9 +535,9 @@ video {
     transition: height .3s;
 }
 
-/*.portfolio-gallery-project:nth-child(3n + 3) {
+.portfolio-gallery-project:nth-child(3n + 3) {
     margin-right: 0;
-}*/
+}
 
 .portfolio-gallery-project:nth-child(n+4) {
     margin-top: 23px;
