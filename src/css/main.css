@@ -89,11 +89,27 @@ nav {
 /*==========Welcome section styles=========*/
 
 .wellcome {
-    background-color: #3f4049;
+    /*background-color: #3f4049;*/
+    background-color: rgba(0,0,0,.7);
+    background-size: cover;
+    background-image: url('../img/pexels-photo-296878.jpeg');
+    position: relative;
 }
+
+.wellcome:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-color: rgba(0,0,0,.5);
+  }
 
 .wellcome > .container {
     flex-direction: column;
+    position: relative;
+    z-index: 1000;
 }
 
 .wellcome-header {
@@ -104,6 +120,7 @@ nav {
     width: 79%;
     margin: 162px auto 0;
     text-align: center;
+   
 }
 
 .btn-our-works {
