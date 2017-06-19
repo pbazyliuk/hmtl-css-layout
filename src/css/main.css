@@ -5,7 +5,6 @@
 html, body {
     font-family: "Poppins", "Arial", sans-serif;
     font-size: 16px;
-    /*width: 1350px;*/
 }
 
 
@@ -36,21 +35,19 @@ nav {
     justify-content: flex-end;
 }
 
-.collapse-btn-label:before {
+.btn-show-menu-label:before {
     font-family: FontAwesome;
     content: "\f0c9";
     display: inline-block;
     padding-right: 3px;
+    font-size: 27px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
-.collapse-btn-label,
-#collapse-btn {
+.btn-show-menu-label,
+.btn-show-menu {
     display: none;
-}
-
-#collapse-btn:checked + .collapse-btn-label {
-    display: block;
 }
 
 .main-nav {
@@ -89,7 +86,6 @@ nav {
 /*==========Welcome section styles=========*/
 
 .wellcome {
-    /*background-color: #3f4049;*/
     background-color: rgba(0,0,0,.7);
     background-size: cover;
     background-image: url('../img/pexels-photo-296878.jpeg');
@@ -120,7 +116,6 @@ nav {
     width: 79%;
     margin: 162px auto 0;
     text-align: center;
-   
 }
 
 .btn-our-works {
@@ -147,7 +142,7 @@ nav {
 
 .advantages-wrapper {
     padding-top: 35px;
-    width: 746px;
+    width: 65%;
     align-self: center;
     display: flex;
     padding-bottom: 172px;
@@ -303,14 +298,12 @@ nav {
     position: relative;
     z-index: 1000;
     margin-top: 141px;
-    /*padding-left: 4px;*/
     margin-bottom: 28px;
     font-size: 50px;
     font-family: "Libre Baskerville", "Times", serif;
 }
 
 .our-focus-info-description {
-    /*padding-left: 4px;*/
     font-size: 18px;
 }
 
@@ -318,7 +311,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 100%;
     margin-bottom: 151px;
 }
 
@@ -326,7 +319,7 @@ nav {
 .our-focus-ux-design,
 .our-focus-photography,
 .our-focus-app-development {
-    width: 202px;
+    width: 17.7%;
     padding: 0 30px;
     height: 347px;
     background-color: #fff;
@@ -362,16 +355,18 @@ nav {
 .our-focus-ux-design-header,
 .our-focus-photography-header,
 .our-focus-app-development-header {
-    margin-top: 27px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 20px;
+    line-height: 150%;
 }
 
 .our-focus-web-design-text,
 .our-focus-ux-design-text,
 .our-focus-photography-text,
 .our-focus-app-development-text {
-    margin: 7px 0 20px;
+    margin: 2px 0 20px;
     font-size: 15px;
     font-weight: 400;
     line-height: 170%;
@@ -385,12 +380,8 @@ nav {
     margin-top: 65px;
 }
 
-.our-focus-photography-header {
-    margin-top: 26px;
-}
-
 .our-focus-ux-design-header {
-    margin-top: 23px;
+    margin-top: 21px;
 }
 
 
@@ -523,14 +514,12 @@ textarea:focus {
     position: relative;
     z-index: 1000;
     margin-top: 141px;
-    /*padding-left: 4px;*/
     margin-bottom: 28px;
     font-size: 50px;
     font-family: "Libre Baskerville", "Times", serif;
 }
 
 .portfolio-info-description {
-    /*padding-left: 4px;*/
     font-size: 18px;
 }
 
@@ -555,8 +544,6 @@ textarea:focus {
 
 .portfolio-gallery-project img {
     cursor: pointer;
-    /*height: 288px;
-    width: 360px;*/
     width: 100%;
     height: auto;
     clip-path: polygon(0% 0%, 0 100%, 100% 100%, 100% 0%);
@@ -631,7 +618,6 @@ textarea:focus {
 /*==========Our team section styles=========*/
 
 .our-team {
-    height: 1225px;
     background: #f7f7f7;
 }
 
@@ -645,13 +631,13 @@ textarea:focus {
     position: relative;
 }
 
-.our-team-info-img-wrapper img {
+.our-team-info-img-wrapper {
     position: absolute;
     top: 10px;
-    left:0;
-    right:5px;
-    margin-left:auto;
-    margin-right:auto;
+    left: calc((100% - 319px)/2);
+}
+
+.our-team-info-img {
     width: 100%;
     height: auto;
 }
@@ -671,11 +657,12 @@ textarea:focus {
 }
 
 .our-team-employee {
-    height: 351px;
-    width: 263px;
+    height: auto;
+    width: 23.1%;
     background-color: #fff;
     margin-right: 30px;
     margin-top: 78px;
+    padding-bottom: 20px;
     box-shadow: 0 0 15px -10px #000;
     box-sizing: border-box;
 }
@@ -699,6 +686,11 @@ textarea:focus {
 
 .our-team-employee-img-wrapper {
     padding: 6px;
+}
+
+.our-team-employee-img-wrapper img {
+    width: 100%;
+    height: auto;
 }
 
 .our-team-employee-name {
@@ -733,12 +725,14 @@ textarea:focus {
 
 .our-team-employee-description {
     width: 100%;
-    height: 285px;
     background-color: #fff;
     margin-top: 48px;
     box-shadow: 0 0 15px -10px #000;
-    padding: 33px 98px;
+    padding: 34px 98px 68px 98px;
+    margin-bottom: 149px;
 }
+
+
 
 .our-team-employee-description:before {
     content: '';
@@ -748,7 +742,6 @@ textarea:focus {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 40px solid #fff;
-    box-shadow: 0 0 15px -10px #000;
     position: relative;
     top: -73px;
     left: 0;
@@ -759,24 +752,25 @@ textarea:focus {
     font-weight: 500;
 }
 
+.our-team-employee-description-text-wrapper {
+    display: flex;
+}
+
 .our-team-employee-description-text {
     margin-top: 22px;
-    width: 635px;
+    width: 67.3%;
     font-size: 15px;
     line-height: 180%;
-    float: left;
 }
 
 .our-team-employee-description-img-wrapper {
-    float: left;
     margin-top: 86px;
-    margin-left: 109px;
+    margin-left: 11.5%;
 }
 
 .our-team-employee-description-social-networks {
-    float: left;
-    margin-left: 35px;
-    margin-top: 30px;
+    margin-left: 34px;
+    margin-top: 28px;
     border-left: 2px solid grey;
     display: flex;
     flex-direction: column;
@@ -824,8 +818,8 @@ textarea:focus {
 /*==========Statistics section styles=========*/
 
 .statistics {
-    height: 465px;
     width: 100%;
+    padding: 9.5% 0 8.8%;
     background-image: url("../img/Statsbg.png");
     background-position-x: -284px;
 }
@@ -837,8 +831,7 @@ textarea:focus {
 }
 
 .statistics-wrapper {
-    width: 1020px;
-    height: 210px;
+    width: 89.5%;
     display: flex;
     justify-content: space-between;
 }
@@ -929,6 +922,7 @@ textarea:focus {
 
 .work-steps {
     background-color: #fff;
+    margin-bottom: 160px;
 }
 
 
@@ -981,183 +975,78 @@ textarea:focus {
 }
 
 .work-steps-plan {
-    margin-bottom: 199px;
+    margin-bottom: 197px;
+    display: flex;
+    flex-direction: column;
 }
 
-.work-steps-plan-project-under {
-    width: 457px;
-    height: 298px;
+.work-steps-plan-project-under,
+.work-steps-plan-research,
+.work-steps-plan-wireframes,
+.work-steps-plan-development {
+    width: 40%;
+    height: 301px;
     margin-top: 76px;
     background-color: #fff;
     box-shadow: 0 0 15px -8px #000;
     position: relative;
-    border: 1px solid transparent;
+    border-bottom: 3px solid #fc5f45;
+    box-sizing: border-box;
 }
 
-.work-steps-plan-project-under:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 457px;
-    margin-top: 68px;
-    background-color: #fc5f45;
-}
-
-.work-steps-plan-project-under-img-wrapper {
-    position: absolute;
-    top: 40px;
-    left: 38px;
-}
-
-.work-steps-plan-project-under-info {
-    margin-top: 46px;
-    margin-left: 125px;
-}
-
-.work-steps-plan-project-under-info-header {
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.work-steps-plan-project-under-info-text {
-    color: #616161;
-    width: 262px;
-    line-height: 180%;
-    font-size: 15px;
-    margin-top: 20px;
-}
-
-.work-steps-plan-research {
-    width: 457px;
-    height: 298px;
-    background-color: #fff;
-    box-shadow: 0 0 15px -8px #000;
-    position: relative;
-    border: 1px solid transparent;
-    margin-top: 0;
-    float: right;
-    clear: left;
-}
-
-.work-steps-plan-research:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 457px;
-    margin-top: 71px;
-    background-color: #38c695;
-}
-
-.work-steps-plan-research-img-wrapper {
-    position: absolute;
-    top: 40px;
-    left: 33px;
-}
-
-.work-steps-plan-research-info {
-    margin-top: 46px;
-    margin-left: 125px;
-}
-
-.work-steps-plan-research-info-header {
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.work-steps-plan-research-info-text {
-    color: #616161;
-    width: 262px;
-    line-height: 180%;
-    font-size: 15px;
-    margin-top: 18px;
-}
-
-.work-steps-plan-wireframes {
-    width: 457px;
-    height: 298px;
-    background-color: #fff;
-    box-shadow: 0 0 15px -8px #000;
-    position: relative;
-    border: 1px solid transparent;
-    margin-top: 0;
-    clear: both;
-}
-
-.work-steps-plan-wireframes:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 457px;
-    margin-top: 71px;
-    background-color: #b27cf5;
-}
-
+.work-steps-plan-project-under-img-wrapper,
+.work-steps-plan-research-img-wrapper,
+.work-steps-plan-development-img-wrapper,
 .work-steps-plan-wireframes-img-wrapper {
     position: absolute;
-    top: 40px;
-    left: 33px;
+    top: 41px;
+    left: 30px;
 }
 
+.work-steps-plan-project-under-info,
+.work-steps-plan-research-info,
+.work-steps-plan-development-info,
 .work-steps-plan-wireframes-info {
-    margin-top: 46px;
-    margin-left: 124px;
+    position: absolute;
+    top: 10px;
+    margin-top: 38px;
+    margin-left: 122px;
 }
 
+.work-steps-plan-project-under-info-header,
+.work-steps-plan-research-info-header,
+.work-steps-plan-development-info-header,
 .work-steps-plan-wireframes-info-header {
     font-size: 25px;
     font-weight: 400;
 }
 
-.work-steps-plan-wireframes-info-text {
-    color: #616161;
-    width: 262px;
-    line-height: 180%;
-    font-size: 15px;
-    margin-top: 18px;
-}
-
-.work-steps-plan-development {
-    width: 457px;
-    height: 298px;
-    background-color: #fff;
-    box-shadow: 0 0 15px -8px #000;
-    position: relative;
-    border: 1px solid transparent;
-    margin-top: 0;
-    float: right;
-}
-
-.work-steps-plan-development:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 457px;
-    margin-top: 71px;
-    background-color: #feb960;
-}
-
-.work-steps-plan-development-img-wrapper {
-    position: absolute;
-    top: 40px;
-    left: 33px;
-}
-
-.work-steps-plan-development-info {
-    margin-top: 46px;
-    margin-left: 124px;
-}
-
-.work-steps-plan-development-info-header {
-    font-size: 25px;
-    font-weight: 400;
-}
-
+.work-steps-plan-project-under-info-text,
+.work-steps-plan-research-info-text,
+.work-steps-plan-wireframes-info-text,
 .work-steps-plan-development-info-text {
     color: #616161;
     width: 262px;
     line-height: 180%;
     font-size: 15px;
     margin-top: 18px;
+}
+
+.work-steps-plan-research {
+    margin-top: 0;
+    align-self: flex-end;
+    border-bottom: 3px solid #38c695;
+}
+
+.work-steps-plan-wireframes {
+    margin-top: 0;
+    border-bottom: 3px solid #b27cf5;
+}
+
+.work-steps-plan-development {
+    margin-top: 0;
+    border-bottom: 3px solid #feb960;
+    align-self: flex-end;
 }
 
 .clearfix:after {
@@ -1216,23 +1105,27 @@ textarea:focus {
 .pricing-table-professional {
     background-color: #fff;
     height: 575px;
-    width: 360px;
+    width: 32%;
     margin-top: 77px;
     text-align: center;
-    margin-bottom: 152px;
+    margin-bottom: 148px;
+}
+
+.pricing-table-starter {
+    border-top: 3px solid #38c695;
+}
+
+.pricing-table-ultimate {
+    border-top: 3px solid #fc5f45;
+}
+
+.pricing-table-professional {
+    border-top: 3px solid #b27cf5;
 }
 
 .pricing-table-starter,
 .pricing-table-ultimate {
     margin-right: 30px;
-}
-
-.pricing-table-starter:before {
-    content: '';
-    display: block;
-    background-color: #38c695;
-    height: 3px;
-    width: 360px;
 }
 
 .pricing-table-starter-header,
@@ -1346,14 +1239,6 @@ textarea:focus {
     transition: all .3s;
 }
 
-.pricing-table-ultimate:before {
-    content: '';
-    display: block;
-    background-color: #fc5f45;
-    height: 3px;
-    width: 360px;
-}
-
 .pricing-table-ultimate-description-btn {
     border: 2px solid #fc5f45;
     color: #fc5f45;
@@ -1364,14 +1249,6 @@ textarea:focus {
     background-color: #fc5f45;
     color: white;
     transition: all .3s;
-}
-
-.pricing-table-professional:before {
-    content: '';
-    display: block;
-    background-color: #b27cf5;
-    height: 3px;
-    width: 360px;
 }
 
 .pricing-table-professional-description-btn {
@@ -1403,7 +1280,6 @@ textarea:focus {
 }
 
 .testimonials-img-wrapper {
-    position: absolute;
     top: 5px;
     position: absolute;
     left:0;
@@ -1435,21 +1311,25 @@ textarea:focus {
 .testimonials-gallery {
     margin-top: 80px;
     display: flex;
+    width: 100%;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 147px;
 }
 
 .testimonials-gallery-img-wrapper {
-    width: 364px;
-    height: 379px;
-    border: 10px solid lightgrey;
+     border: none;
+}
+
+.testimonials-gallery-img-wrapper img {
+    border: none;
+    width: 100%;
+    height: auto;
 }
 
 .testimonials-gallery-letter {
-    width: 756px;
-    height: 310px;
+    width: 66.3%;
     background-color: #fff;
     border-bottom: 3px solid #feb960;
     position: relative;
@@ -1493,6 +1373,7 @@ textarea:focus {
     font-size: 13px;
     margin-left: 53px;
     margin-top: 9px;
+    margin-bottom: 36px;
 }
 
 .testimonials-gallery-letter-slide-icons {
@@ -1554,6 +1435,7 @@ textarea:focus {
 
 .select-us-info-description {
     font-size: 18px;
+    margin-bottom: 78px;
 }
 
 .select-us > .container:last-child {
@@ -1561,10 +1443,11 @@ textarea:focus {
 }
 
 .select-us-gallery {
-    width: 1150px;
+    width: 96%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .select-us-business-img-wrapper {
@@ -1573,8 +1456,7 @@ textarea:focus {
 
 .select-us-business {
     height: 150px;
-    margin-top: 78px;
-    margin-left: 24px;
+    width: 29%;
 }
 
 .select-us-business-header {
@@ -1596,9 +1478,8 @@ textarea:focus {
 }
 
 .select-us-revisions {
-    margin-left: 72px;
+    width: 29%;
     height: 150px;
-    margin-top: 78px;
 }
 
 .select-us-revisions-img-wrapper {
@@ -1620,14 +1501,11 @@ textarea:focus {
     clear: left;
     font-size: 15px;
     line-height: 180%;
-    margin-left: -4px;
-    width: 320px;
 }
 
 .select-us-prefection {
-    margin-left: 72px;
+    width: 29%;
     height: 150px;
-    margin-top: 78px;
 }
 
 .select-us-prefection-img-wrapper {
@@ -1649,12 +1527,10 @@ textarea:focus {
     clear: left;
     font-size: 15px;
     line-height: 180%;
-    margin-left: -4px;
-    width: 315px;
 }
 
 .select-us-experience {
-    margin-left: 23px;
+    width: 29%;
     height: 150px;
     margin-top: 74px;
 }
@@ -1671,7 +1547,7 @@ textarea:focus {
 }
 
 .select-us-deadline {
-    margin-left: 72px;
+    width: 29%;
     height: 150px;
     margin-top: 73px;
 }
@@ -1691,11 +1567,10 @@ textarea:focus {
     clear: left;
     font-size: 15px;
     line-height: 180%;
-    width: 325px;
 }
 
 .select-us-award {
-    margin-left: 65px;
+    width: 29%;
     height: 150px;
     margin-top: 73px;
 }
@@ -1763,7 +1638,6 @@ textarea:focus {
 
 .our-blog {
     background-color: #f7f7f7;
-    height: 1150px;
 }
 
 .our-blog > .container {
@@ -1854,6 +1728,7 @@ textarea:focus {
 
 .our-blog-right-part {
     margin-top: 77px;
+    margin-bottom: 150px;
 }
 
 .our-blog-right-part-article {
@@ -1895,7 +1770,6 @@ textarea:focus {
     margin-bottom: 35px;
 }
 
-
 .our-blog-link {
     text-decoration: none;
     color: inherit;
@@ -1932,6 +1806,8 @@ textarea:focus {
 }
 
 
+/*==========Subscribe section styles=========*/
+
 .subscribe {
     background-color: #fff;
 }
@@ -1962,8 +1838,8 @@ textarea:focus {
 }
 
 .subscribe-newsletter-input {
-    width: 272px;
-    height: 46px;
+    width: 56%;
+    height: 44px;
     
     background-color: transparent;
     border: 1px solid lightgrey;
@@ -1974,19 +1850,21 @@ textarea:focus {
     background: #f7f7f7;
 }
 
-
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 16px;
     font-family: "Poppins", "Arial", sans-serif;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
     font-size: 16px;
     font-family: "Poppins", "Arial", sans-serif;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
     font-size: 16px;
     font-family: "Poppins", "Arial", sans-serif;
 }
+
 :-moz-placeholder { /* Firefox 18- */
     font-size: 16px;
     font-family: "Poppins", "Arial", sans-serif;
@@ -1997,13 +1875,12 @@ input:focus{
 }
 
 .subscribe-newsletter-btn-submit {
-    height: 50px;
+    height: 48px;
     background-color: #fc5f45;
     border: 1px solid #fc5f45;
     border: none;
-    width: 180px;
+    width: 37.3%;
     padding: 0;
-    /*margin-left: -4px;*/
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     color: #fff;
@@ -2063,13 +1940,12 @@ input:focus{
 }
 
 .get-in-touch-form {
-    width: 752px;
+    width: 66%;
     margin-top: 80px;
-    
 }
 
 .get-in-touch-form input {
-    width: 360px;
+    width: 47.8%;
     height: 50px;
     border: 0;
     padding: 0;
@@ -2088,24 +1964,36 @@ input:focus{
     margin-top: 25px;
 }
 
-.get-in-touch-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.get-in-touch-form input::-webkit-input-placeholder,
+.get-in-touch-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 16px;
     text-align: center;
     font-family: "Poppins", "Arial", sans-serif;
 }
-.get-in-touch-form input::-moz-placeholder { /* Firefox 19+ */
+
+.get-in-touch-form input::-moz-placeholder,
+.get-in-touch-form textarea::-moz-placeholder { /* Firefox 19+ */
     font-size: 16px;
     text-align: center;
     font-family: "Poppins", "Arial", sans-serif;
 }
-.get-in-touch-form input:-ms-input-placeholder { /* IE 10+ */
+
+.get-in-touch-form input:-ms-input-placeholder, /* IE 10+ */
+.get-in-touch-form textarea:-ms-input-placeholder { /* IE 10+ */
     font-size: 16px;
     text-align: center;
     font-family: "Poppins", "Arial", sans-serif;
 }
-.get-in-touch-form input:-moz-placeholder { /* Firefox 18- */
+
+.get-in-touch-form input:-moz-placeholder, /* Firefox 18- */
+.get-in-touch-form textarea input:-moz-placeholder, { /* Firefox 18- */
     font-size: 16px;
     text-align: center;
+    font-family: "Poppins", "Arial", sans-serif;
+}
+
+.get-in-touch-form textarea::-webkit-input-placeholder {
+    font-size: 16px;
     font-family: "Poppins", "Arial", sans-serif;
 }
 
@@ -2159,11 +2047,12 @@ input:focus{
     justify-content: center;
     box-sizing: border-box;
     border-bottom: 3px solid transparent;
-    border-image: url(../img/lines.png) 10 round;
+    border-image: url(../img/lines.png) 10 stretch;
+    border-image-repeat: no-repeat;
 }
 
 .footer-info-wrapper {
-    width: 1020px;
+    width: 89%;
     height: 100px;
     display: flex;
     height: 140px;
